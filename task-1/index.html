@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__content">
+        <div class="header__box-left">
+          <div class="header__logo logo-box">
+            <a class="logo-box__link" href="#">
+              <img class="logo-box__img" src="img/logo.svg" alt="Лого">
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__items list-reset">
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="sprite.svg#courses"></use>
+                   </svg>
+                  <span>
+                    Курсы
+                  </span>
+                </a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="sprite.svg#profession"></use>
+                  </svg>
+                  <span>Профессия</span>
+                </a>
+              </li>
+              <li class="header__item menu">
+                <button class="header__btn menu__btn btn-reset intensive" id="dropdown">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="sprite.svg#lightning"></use>
+                  </svg>
+                  <span>Интенсивы</span>
+                </button>
+                <ul class="menu__items list-reset" id="dropdownList">
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">
+                      HTML и CSS, уровень 1
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">
+                      HTML и CSS, уровень 2
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">
+                      JavaScript, уровень 1
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">
+                      JavaScript, уровень 2
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">
+                      Node.js, уровень 1
+                    </a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">
+                      PHP, уровень 1
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__box-right">
+          <div class="header__grup">
+            <button class="header__btn btn-reset registration">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="sprite.svg#reg"></use>
+              </svg>
+              <span>Регистрация</span>
+            </button>
+            <button class="header__btn btn-reset entrance">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="sprite.svg#Login"></use>
+              </svg>
+              <span>Вход</span>
+            </button>
+          </div>
+        </div>
+        <button class="header__burger burger btn-reset" onclick="openNav(this)">
+          <span class="burger__span"></span>
+          <span class="burger__span"></span>
+          <span class="burger__span"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero section__hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Главнвя страница
+          </h1>
+          <div class="hero__swiper swiper infoSwiper">
+            <ul class="hero__items list-reset swiper-wrapper">
+              <li class="hero__item swiper-slide">
+                <div class="hero__box-left">
+                  <h3 class="hero__subject">Мой проект 1</h3>
+                  <p class="hero__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab odit quam earum temporibus inventore atque deleniti aperiam itaque, animi praesentium, dicta reiciendis corporis saepe dolores ea laudantium architecto magnam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab odit quam earum temporibus inventore atque deleniti aperiam itaque, animi praesentium, dicta reiciendis corporis saepe dolores ea laudantium architecto magnam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab odit quam earum temporibus inventore atque deleniti aperiam itaque, animi praesentium, dicta reiciendis corporis saepe dolores ea laudantium architecto magnam!
+                  </p>
+                </div>
+                <div class="hero__box-right">
+                  <img class="hero__img" src="img/slider/projekt1-550-950.webp" alt="первый проект">
+                </div>
+              </li>
+              <li class="hero__item swiper-slide">
+                <div class="hero__box-left">
+                  <h3 class="hero__subject">Мой проект 2</h3>
+                  <p class="hero__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab odit quam earum temporibus inventore atque deleniti aperiam itaque, animi praesentium, dicta reiciendis corporis saepe dolores ea laudantium architecto magnam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab odit quam earum temporibus inventore atque deleniti aperiam itaque, animi praesentium, dicta reiciendis corporis saepe dolores ea laudantium architecto magnam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab odit quam earum temporibus inventore atque deleniti aperiam itaque, animi praesentium, dicta reiciendis corporis saepe dolores ea laudantium architecto magnam!
+                  </p>
+                </div>
+                <div class="hero__box-right">
+                  <img class="hero__img" src="img/slider/projekt2-550-950.webp" alt="второй проект">
+                </div>
+              </li>
+              <li class="hero__item swiper-slide">
+                <div class="hero__box-left">
+                  <h3 class="hero__subject">Мой проект 3</h3>
+                  <p class="hero__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab odit quam earum temporibus inventore atque deleniti aperiam itaque, animi praesentium, dicta reiciendis corporis saepe dolores ea laudantium architecto magnam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab odit quam earum temporibus inventore atque deleniti aperiam itaque, animi praesentium, dicta reiciendis corporis saepe dolores ea laudantium architecto magnam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab odit quam earum temporibus inventore atque deleniti aperiam itaque, animi praesentium, dicta reiciendis corporis saepe dolores ea laudantium architecto magnam!
+                  </p>
+                </div>
+                <div class="hero__box-right">
+                  <img class="hero__img" src="img/slider/projekt3-550-950.webp" alt="третий проект">
+                </div>
+              </li>
+              <li class="hero__item swiper-slide">
+                <div class="hero__box-left">
+                  <h3 class="hero__subject">Мой проект 4</h3>
+                  <p class="hero__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab odit quam earum temporibus inventore atque deleniti aperiam itaque, animi praesentium, dicta reiciendis corporis saepe dolores ea laudantium architecto magnam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab odit quam earum temporibus inventore atque deleniti aperiam itaque, animi praesentium, dicta reiciendis corporis saepe dolores ea laudantium architecto magnam!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ab odit quam earum temporibus inventore atque deleniti aperiam itaque, animi praesentium, dicta reiciendis corporis saepe dolores ea laudantium architecto magnam!
+                  </p>
+                </div>
+                <div class="hero__box-right">
+                  <img class="hero__img" src="img/slider/projekt5-550-950.webp" alt="четвертый проект">
+                </div>
+              </li>
+            </ul>
+            <button class="swiper-button-next hero__next btn-reset"></button>
+            <button class="swiper-button-prev hero__prev btn-reset"></button>
+            <div class="swiper-pagination hero__pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="information section__information">
+      <div class="information__container container">
+        <div class="information__content">
+          <h2 class="information__title">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </h2>
+          <p class="information__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis itaque quis fugit ipsam, iusto quia sit, fugiat accusamus fuga quo consequuntur, aperiam laboriosam eum! Voluptatum quibusdam necessitatibus ad sunt consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab deleniti adipisci nihil odio ipsa? Quos molestiae unde blanditiis. Totam reiciendis nobis laborum dolores iusto neque corrupti cupiditate quidem est blanditiis?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore magni repellat corporis voluptate ab nesciunt cupiditate temporibus aspernatur, veniam adipisci, magnam commodi dolorem, quia placeat quisquam nostrum sapiente. Officia, magni!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus impedit sed, quod deleniti non nihil itaque explicabo autem magni eligendi? Atque error possimus blanditiis architecto et aliquid, distinctio veniam maxime.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem perspiciatis ipsa magnam ipsam animi maiores ratione nisi nobis nemo nam dicta consequuntur in tempore, commodi ad. Veniam quas dolorum eius?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae debitis voluptatem, voluptates aspernatur, unde laboriosam quaerat dolorum explicabo impedit quisquam quae rem cupiditate alias qui a provident. Odio, doloremque similique.
+          </p>
+          <p class="information__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis itaque quis fugit ipsam, iusto quia sit, fugiat accusamus fuga quo consequuntur, aperiam laboriosam eum! Voluptatum quibusdam necessitatibus ad sunt consequuntur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab deleniti adipisci nihil odio ipsa? Quos molestiae unde blanditiis. Totam reiciendis nobis laborum dolores iusto neque corrupti cupiditate quidem est blanditiis?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore magni repellat corporis voluptate ab nesciunt cupiditate temporibus aspernatur, veniam adipisci, magnam commodi dolorem, quia placeat quisquam nostrum sapiente. Officia, magni!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus impedit sed, quod deleniti non nihil itaque explicabo autem magni eligendi? Atque error possimus blanditiis architecto et aliquid, distinctio veniam maxime.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem perspiciatis ipsa magnam ipsam animi maiores ratione nisi nobis nemo nam dicta consequuntur in tempore, commodi ad. Veniam quas dolorum eius?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae debitis voluptatem, voluptates aspernatur, unde laboriosam quaerat dolorum explicabo impedit quisquam quae rem cupiditate alias qui a provident. Odio, doloremque similique.
+          </p>
+        </div>
+        <aside class="information__aside">
+          <ul class="information__items list-reset">
+            <li class="information__item">
+              <div class="information__box-left">
+                <img class="information__img" src="img/information/prog1(320).webp" alt="Популярное 1">
+              </div>
+              <div class="information__box-right box-right">
+                <h3 class="box-right__title">
+                  Lorem, ipsum dolor sit!
+                </h3>
+                <p class="box-right__desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum mollitia quae, ipsa vero sit qui molestiae deleniti cumque.
+                </p>
+              </div>
+            </li>
+            <li class="information__item">
+              <div class="information__box-left">
+                <img class="information__img" src="img/information/prog2(320).webp" alt="Популярное 2">
+              </div>
+              <div class="information__box-right box-right">
+                <h3 class="box-right__title">
+                  Lorem, ipsum dolor sit!
+                </h3>
+                <p class="box-right__desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum mollitia quae, ipsa vero sit qui molestiae deleniti cumque.
+                </p>
+              </div>
+            </li>
+            <li class="information__item">
+              <div class="information__box-left">
+                <img class="information__img" src="img/information/prog3(320).webp" alt="Популярное 3">
+              </div>
+              <div class="information__box-right box-right">
+                <h3 class="box-right__title">
+                  Lorem, ipsum dolor sit!
+                </h3>
+                <p class="box-right__desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum mollitia quae, ipsa vero sit qui molestiae deleniti cumque.
+                </p>
+              </div>
+            </li>
+            <li class="information__item">
+              <div class="information__box-left">
+                <img class="information__img" src="img/information/prog7(320).webp" alt="Популярное 4">
+              </div>
+              <div class="information__box-right box-right">
+                <h3 class="box-right__title">
+                  Lorem, ipsum dolor sit!
+                </h3>
+                <p class="box-right__desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum mollitia quae, ipsa vero sit qui molestiae deleniti cumque.
+                </p>
+              </div>
+            </li>
+            <li class="information__item">
+              <div class="information__box-left">
+                <img class="information__img" src="img/information/prog1(320).webp" alt="Популярное 5">
+              </div>
+              <div class="information__box-right box-right">
+                <h3 class="box-right__title">
+                  Lorem, ipsum dolor sit!
+                </h3>
+                <p class="box-right__desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum mollitia quae, ipsa vero sit qui molestiae deleniti cumque.
+                </p>
+              </div>
+            </li>
+            <li class="information__item">
+              <div class="information__box-left">
+                <img class="information__img" src="img/information/prog3(320).webp" alt="Популярное 6">
+              </div>
+              <div class="information__box-right box-right">
+                <h3 class="box-right__title">
+                  Lorem, ipsum dolor sit!
+                </h3>
+                <p class="box-right__desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum mollitia quae, ipsa vero sit qui molestiae deleniti cumque.
+                </p>
+              </div>
+            </li>
+            <li class="information__item">
+              <div class="information__box-left">
+                <img class="information__img" src="img/information/prog7(320).webp" alt="Популярное 7">
+              </div>
+              <div class="information__box-right box-right">
+                <h3 class="box-right__title">
+                  Lorem, ipsum dolor sit!
+                </h3>
+                <p class="box-right__desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eum mollitia quae, ipsa vero sit qui molestiae deleniti cumque.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
